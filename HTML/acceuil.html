@@ -5,56 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriThub - Accueil</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    
 </head>
 <body>
-    <nav>
-        <div class="logo-section">
-            <a href="acceuil.html">🥗 NutriThub</a>
+
+<nav>
+    <div class="logo-section">
+        <a href="acceuil.html">🥗 NutriThub</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="acceuil.html"><strong>Accueil</strong></a></li>
+        <li class="dropdown">
+            <a href="programme.html" class="dropbtn">Programme nutritionnel ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="calcul_nutri.html">Calculateur nutritionnel</a></li>
+                <li><a href="programme_debutant.html">Débutant</a></li>
+                <li><a href="programme_perte_poids.html">Perte de poids</a></li>
+                <li><a href="programme_prise_masse.html">Prise de masse</a></li>
+            </ul>
+        </li>
+        <li><a href="calculateurs/calories.html">Calculateurs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="prog-container">
+
+    <!-- HERO SECTION -->
+    <section class="prog-section">
+        <div class="prog-header">
+            <h1>Maîtrise ta nutrition. Comprends ton corps.</h1>
+            <p>
+                NutriThub t’aide à calculer tes besoins caloriques, estimer ta masse musculaire
+                et comprendre comment les protéines et les calories influencent tes résultats.
+            </p>
         </div>
-        <ul class="nav-links">
-            <li><a href="acceuil.html"> <strong> Accueil </strong></a></li>
-            <li class="dropdown">
-                <a href="programme.html" class="dropbtn">Programme nutritionnel ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="calcul_nutri.html">Calculateur nutritionnel</a></li>
-                    <li><a href="programme_debutant.html">Débutant</a></li>
-                    <li><a href="programme_perte_poids.html">Perte de poids</a></li>
-                    <li><a href="programme_prise_masse.html">Prise de masse</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="calculateurs/calories.html" class="dropbtn">Calculateurs ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="calcul_nutri.html">Calculateur nutritionnel</a></li>
-                    <li><a href="calculateurs/calories.html">Calories</a></li>
-                    <li><a href="calculateurs/imc.html">IMC</a></li>
-                    <li><a href="calculateurs/proteines.html">Protéines</a></li>
-                    <li><a href="calculateurs/imm.html">IMM</a></li>
-                </ul>
-            </li>
+        <div class="section-cta">
+            <a href="calculateurs/calories.html" class="prog-button">Commencer mon calcul</a>
+        </div>
+    </section>
 
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- VALEUR EDUCATIVE -->
+    <section class="prog-section">
+        <h2>Pourquoi comprendre la nutrition ?</h2>
+        <p>
+            La transformation physique ne repose pas uniquement sur l’entraînement.
+            Comprendre ton métabolisme, ton apport calorique et tes besoins en protéines
+            te permet de progresser plus intelligemment.
+        </p>
+        <p>
+            Chez NutriThub, nous combinons outils pratiques et explications claires
+            pour que tu ne suives pas un plan au hasard, mais que tu comprennes
+            réellement ce que tu fais.
+        </p>
+    </section>
 
-    <main>
-        <h1>Bienvenue sur NutriThub</h1>
-        <p>Votre plateforme complète pour une nutrition optimale.</p>
-    </main>
+    <!-- OUTILS -->
+    <section class="prog-section">
+        <h2>Des outils simples et efficaces</h2>
 
+        <div class="prog-section">
+            <h3>Calculateur de calories</h3>
+            <p>
+                Estime ton métabolisme de base et ta dépense énergétique totale
+                selon ton niveau d’activité et ton objectif.
+            </p>
+            <a href="calculateurs/calories.html" class="prog-button">Calculer mes calories</a>
+        </div>
 
-        <footer class="footer">
-        
-            
-            <p class="footer-content"> &copy; 2026 - NutriThub - Site créer par <a href="https://github.com/Edgrc"> Edgar </a> & <a href="https://github.com/Hydrojak/"> Sacha</a> </p>
-            <p class="footer-content">Tu veux nous contacter ? <a href="https://www.greenit.fr/" class="link-footer"> C'est par ici !</a></p>
-        
-        </footer>    
+        <div class="prog-section">
+            <h3>Calculateur de protéines</h3>
+            <p>
+                Détermine la quantité idéale de protéines en fonction de ton poids
+                et de ton niveau d’activité.
+            </p>
+            <a href="calculateurs/proteines.html" class="prog-button">Calculer mes protéines</a>
+        </div>
 
+        <div class="prog-section">
+            <h3>Indice de Masse Maigre (IMM)</h3>
+            <p>
+                Évalue ton niveau de masse musculaire indépendamment du poids total,
+                pour une analyse plus précise de ta composition corporelle.
+            </p>
+            <a href="calculateurs/imm.html" class="prog-button">Calculer mon IMM</a>
+        </div>
+    </section>
 
+    <!-- PROGRAMMES -->
+    <section class="prog-section">
+        <h2>Programmes adaptés à ton objectif</h2>
+        <p>
+            Que tu débutes, que tu cherches à perdre du poids ou à prendre de la masse,
+            nos programmes te guident étape par étape avec des bases claires et structurées.
+        </p>
 
+        <div class="section-cta">
+            <a href="programme.html" class="prog-button">Voir les programmes</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p class="footer-content">© 2026 - NutriThub - Site créé par Edgar & Sacha</p>
+</footer>
 
 </body>
 </html>
