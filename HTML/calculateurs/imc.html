@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur IMC | NutriThub</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-section">
+            <a href="../acceuil.html">🥗 NutriThub</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../acceuil.html"> <strong> Accueil </strong></a></li>
+            <li class="dropdown">
+                <a href="../programme.html" class="dropbtn">Programme nutritionnel ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="../calcul_nutri.html">Calculateur nutritionnel</a></li>
+                    <li><a href="../programme_debutant.html">Débutant</a></li>
+                    <li><a href="../programme_perte_poids.html">Perte de poids</a></li>
+                    <li><a href="../programme_prise_masse.html">Prise de masse</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="calories.html" class="dropbtn">Calculateurs ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="../calcul_nutri.html">Calculateur nutritionnel</a></li>
+                    <li><a href="calories.html">Calories</a></li>
+                    <li><a href="imc.html">IMC</a></li>
+                    <li><a href="proteines.html">Protéines</a></li>
+                    <li><a href="imm.html">IMM</a></li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="prog-container">
+        <section class="prog-section">
+            <div class="prog-header">
+                <h1>Calculateur IMC</h1>
+                <p>Calcule ton Indice de Masse Corporelle et sa catégorie.</p>
+            </div>
+
+            <div class="prog-section">
+                <h2>Données</h2>
+
+                <div class="form-group">
+                    <label class="form-label">Poids (kg)</label>
+                    <input type="number" id="poids_imc" class="form-input" placeholder="Ex : 70">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Taille (cm)</label>
+                    <input type="number" id="taille_imc" class="form-input" placeholder="Ex : 180">
+                </div>
+            </div>
+
+            <div class="results-card prog-section section-cta">
+                <button class="prog-button" id="calculer_imc" type="button">Calculer</button>
+                <div id="resultat_imc" style="margin-top:20px; font-size:1.2rem;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-content"> &copy; 2026 - NutriThub - Site créer par <a href="https://github.com/Edgrc"> Edgar </a> & <a href="https://github.com/Hydrojak/"> Sacha</a> </p>
+        <p class="footer-content">Tu veux nous contacter ? <a href="https://www.greenit.fr/" class="link-footer"> C'est par ici !</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("calculer_imc").addEventListener("click", function () {
+            const poids = parseFloat(document.getElementById("poids_imc").value);
+            const tailleCm = parseFloat(document.getElementById("taille_imc").value);
+
+            if (!poids || !tailleCm) {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+
+            const taille = tailleCm / 100;
+            const imc = poids / (taille * taille);
+
+            let categorie = "";
+            if (imc < 18.5) categorie = "Insuffisance pondérale";
+            else if (imc < 25) categorie = "Corpulence normale";
+            else if (imc < 30) categorie = "Surpoids";
+            else categorie = "Obésité";
+
+            document.getElementById("resultat_imc").innerHTML =
+                `<p><strong>IMC :</strong> ${imc.toFixed(1)}</p><p><strong>Catégorie :</strong> ${categorie}</p>`;
+        });
+    </script>
+
+</body>
+</html>

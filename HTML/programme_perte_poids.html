@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme — Perte de poids | NutriThub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo-section">
+            <a href="acceuil.html">🥗 NutriThub</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html"> <strong> Accueil </strong></a></li>
+            <li class="dropdown">
+                <a href="programme.html" class="dropbtn">Programme nutritionnel ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="calcul_nutri.html">Calculateur nutritionnel</a></li>
+                    <li><a href="programme_debutant.html">Débutant</a></li>
+                    <li><a href="programme_perte_poids.html">Perte de poids</a></li>
+                    <li><a href="programme_prise_masse.html">Prise de masse</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="calculateurs/calories.html" class="dropbtn">Calculateurs ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="calcul_nutri.html">Calculateur nutritionnel</a></li>
+                    <li><a href="calculateurs/calories.html">Calories</a></li>
+                    <li><a href="calculateurs/imc.html">IMC</a></li>
+                    <li><a href="calculateurs/proteines.html">Protéines</a></li>
+                    <li><a href="calculateurs/imm.html">IMM</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<main>
+
+        
+        <section class="beginner-hero">
+            <h1><span>Programme</span> Perte de Poids</h1>
+            <p>Perds du gras efficacement, sans frustration et sans mettre ta santé en danger.</p>
+        </section>
+
+        <div class="prog-container">
+
+            
+            <div class="pillars-grid">
+                <div class="card">
+                    <div class="icon">🥗</div>
+                    <h3>Nutrition</h3>
+                    <p>Un déficit calorique contrôlé pour brûler du gras sans perdre de muscle.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🔥</div>
+                    <h3>Activité physique</h3>
+                    <p>Combinaison optimale entre musculation et cardio intelligent.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🧘</div>
+                    <h3>Habitudes</h3>
+                    <p>Sommeil, hydratation et gestion du stress pour maximiser les résultats.</p>
+                </div>
+            </div>
+
+            <!-- CALCULATEUR -->
+            <div class="prog-section">
+                <h2>Calculateur de calories (Mifflin‑St Jeor)</h2>
+                <p>Calcule ton métabolisme basal et ton objectif calorique pour perdre du poids efficacement.</p>
+
+                <div class="form-group">
+                    <label class="form-label">Sexe</label>
+                    <select id="sexe" class="form-select">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Poids (kg)</label>
+                    <input type="number" id="poids" class="form-input" placeholder="Ex : 80">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Taille (cm)</label>
+                    <input type="number" id="taille" class="form-input" placeholder="Ex : 175">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Âge</label>
+                    <input type="number" id="age" class="form-input" placeholder="Ex : 30">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Niveau d’activité</label>
+                    <select id="activite" class="form-select">
+                        <option value="1.2">Sédentaire</option>
+                        <option value="1.375">Léger</option>
+                        <option value="1.55">Modéré</option>
+                        <option value="1.725">Intense</option>
+                        <option value="1.9">Très intense</option>
+                    </select>
+                </div>
+
+                <button class="prog-button" id="calculer">Calculer</button>
+
+                <div id="resultat" style="margin-top:20px;"></div>
+            </div>
+
+            <!-- CONSEILS -->
+            <div class="prog-section">
+                <h2>Conseils pour une perte de poids durable</h2>
+                <ul class="prog-list">
+                    <li>Crée un déficit modéré (300 à 500 kcal/jour).</li>
+                    <li>Priorise les protéines pour préserver ta masse musculaire.</li>
+                    <li>Augmente ton NEAT (marche, mouvements du quotidien).</li>
+                    <li>Évite les régimes trop restrictifs qui mènent au rebond.</li>
+                </ul>
+            </div>
+
+            
+            <div class="faq-section">
+                <h2>FAQ</h2>
+
+                <details>
+                    <summary>Combien de kilos puis‑je perdre par mois</summary>
+                    <p>Entre 1 et 3 kg selon ton déficit et ton niveau d’activité.</p>
+                </details>
+
+                <details>
+                    <summary>Le cardio est‑il obligatoire</summary>
+                    <p>Non, mais il accélère la dépense calorique et améliore la santé.</p>
+                </details>
+
+                <details>
+                    <summary>Dois‑je supprimer les glucides</summary>
+                    <p>Absolument pas. Le déficit calorique est ce qui compte réellement.</p>
+                </details>
+            </div>
+
+        </div>
+
+        
+        <section class="cta-section">
+            <h2>Prêt à commencer ta transformation</h2>
+            <p>Je peux t’aider à construire un plan personnalisé et durable.</p>
+            <a href="contact.html" class="prog-button">Me contacter</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">     
+        <p class="footer-content"> &copy; 2026 - NutriThub - Site créer par <a href="https://github.com/Edgrc"> Edgar </a> & <a href="https://github.com/Hydrojak/"> Sacha</a> </p>
+        <p class="footer-content">Tu veux nous contacter ? <a href="https://www.greenit.fr/" class="link-footer"> C'est par ici !</a></p>
+    </footer> 
+
+</body>
+</html>
+
