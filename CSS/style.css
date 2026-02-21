@@ -38,6 +38,16 @@
             color: #3498db;
         }
 
+        .logo-img {
+            height: 100px; /* Ajuste la hauteur selon tes besoins */
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+
+
+
         .nav-links {
             display: flex;
             gap: 2rem;
