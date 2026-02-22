@@ -70,7 +70,7 @@ require __DIR__ . "/../includes/header.php";
             <div class="split-img">
                 <div class="video-frame">
                     <video autoplay loop muted playsinline class="science-video">
-                        <source src="media/videos/science-calories.mp4" type="video/mp4">
+                        <source src="../../media/videos/science-calories.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
