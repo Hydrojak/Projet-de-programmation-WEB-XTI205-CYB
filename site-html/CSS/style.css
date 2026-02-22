@@ -662,6 +662,10 @@
             background: url('../media/images/nutrition_baniere.avif') no-repeat center center/cover;
         }
 
+        .proteines-bg {
+            background: url('../media/images/protein-sources.avif') no-repeat center center/cover;
+        }   
+
 
         /* Section Expert */
         .expert-section {
