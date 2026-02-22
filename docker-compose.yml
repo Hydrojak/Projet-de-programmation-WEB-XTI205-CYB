@@ -1,13 +1,21 @@
+version: '3.8'
+
 services:
-  web:
+  php-site:
     build: .
-    container_name: nutrithub_web
+    container_name: nutrithub_php
     ports:
       - "8080:80"
     volumes:
-      - .:/var/www/html
-      - nutrithub_data:/var/www/html/data
-    restart: unless-stopped
+      - ./site-php/public:/var/www/html
+      - ./site-php/data:/var/www/data
+    restart: always
 
-volumes:
-  nutrithub_data:
+  html-site:
+    image: nginx:alpine
+    container_name: nutrithub_html
+    ports:
+      - "8081:80"
+    volumes:
+      - ./site-html:/usr/share/nginx/html:ro
+    restart: always
