@@ -539,16 +539,17 @@
 
         /* --- HERO HEADER --- */
         .prog-header-hero {
-            background: url('../media/images/nutrition_baniere.avif') no-repeat center center/cover;
+            width: 100%;
             height: 300px;
             border-radius: 20px;
-            margin-bottom: 40px;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            margin-bottom: 40px;
+            background-color: #2c3e50; /* Couleur de secours si l'image ne charge pas */
         }
 
         .hero-overlay {
@@ -653,5 +654,58 @@
             line-height: 1.4;
         }
 
+        .calories-bg {
+            background: url('../media/images/calories_banniere.webp') no-repeat center center/cover;
+        }
+
+        .programme-bg {
+            background: url('../media/images/nutrition_baniere.avif') no-repeat center center/cover;
+        }
 
 
+        /* Section Expert */
+        .expert-section {
+            background-color: #f4f7f6; /* Un gris-bleu très léger type médical/labo */
+            border-radius: 20px;
+            padding: 40px !important;
+            margin-top: 50px;
+        }
+
+        .expert-block {
+            margin: 40px 0;
+            align-items: center;
+        }
+
+        /* Cadre pour la vidéo */
+        .video-frame {
+            border: 8px solid #2c3e50;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            overflow: hidden;
+            line-height: 0; /* Enlève l'espace sous la vidéo */
+        }
+
+        .science-video {
+            width: 100%;
+            display: block;
+        }
+        
+        
+        /* Inversion pour le layout en Z (Image à droite) */
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Séparateur discret */
+        .separator {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #bdc3c7, transparent);
+            margin: 40px 0;
+        }
+
+        .expert-block h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
