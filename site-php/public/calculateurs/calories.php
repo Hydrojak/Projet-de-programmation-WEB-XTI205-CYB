@@ -7,37 +7,85 @@ require __DIR__ . "/../includes/header.php";
 <main class="prog-container">
 
 
-    <section class="prog-section">
-        <div class="prog-header">
+    <header class="prog-header-hero calories-bg">
+        <div class="hero-overlay">
             <h1>Les calories</h1>
             <p>Comprendre l’énergie avant de calculer tes besoins.</p>
         </div>
+    </header>
 
-        <div class="prog-section">
+    <section class="prog-section section-split no-border">
+        <div class="split-text">
             <h2>Qu’est-ce qu’une calorie ?</h2>
             <p>
                 Une calorie (kcal) est une unité d’énergie. Ton corps utilise cette énergie
                 pour respirer, réfléchir, bouger et récupérer après l’effort.
             </p>
-        </div>
-
-        <div class="prog-section">
-            <h2>Métabolisme de base et dépense totale</h2>
             <p>
-                Le métabolisme de base (MB) correspond à l’énergie nécessaire au repos.
-                On multiplie ensuite par ton niveau d’activité pour obtenir la dépense
-                énergétique totale.
+                C'est le carburant de ton moteur. Sans elle, rien ne fonctionne !
             </p>
         </div>
-
-        <div class="prog-section">
-            <h2>Déficit, maintien, surplus</h2>
-            <ul>
-                <li>Maintien : poids stable</li>
-                <li>Déficit : perte de poids</li>
-                <li>Surplus : prise de masse</li>
-            </ul>
+        <div class="split-img">
+            <img src="../../media/images/calories_infos.png" alt="Énergie et nutrition">
         </div>
+    </section>
+
+    <section class="prog-section">
+        <h2>Métabolisme de base et dépense totale</h2>
+        <div class="info-box-light">
+            <p>
+                Le <strong>métabolisme de base (MB)</strong> correspond à l’énergie que ton corps brûle au repos total. 
+                Pour connaître ta dépense réelle, on multiplie ce chiffre par ton niveau d’activité journalier.
+            </p>
+        </div>
+    </section>
+
+    <section class="prog-section">
+        <h2 style="text-align: center; margin-bottom: 25px;">Déficit, maintien ou surplus ?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <span class="benefit-icon">⚖️</span>
+                <h3>Maintien</h3>
+                <p>Tu manges autant que tu dépenses. Ton poids reste stable.</p>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">📉</span>
+                <h3>Déficit</h3>
+                <p>Tu manges moins que ta dépense. Idéal pour la perte de poids.</p>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">📈</span>
+                <h3>Surplus</h3>
+                <p>Tu manges plus que ta dépense. Nécessaire pour la prise de masse.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="prog-section expert-section">
+        <h2 class="section-title">🧬 Le coin des experts : La science derrière</h2>
+
+        <div class="expert-block section-split">
+            <div class="split-img">
+                <div class="video-frame">
+                    <video autoplay loop muted playsinline class="science-video">
+                        <source src="media/videos/science-calories.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="split-text">
+                <h3>Comment le corps brûle-t-il l'énergie ?</h3>
+                <p>
+                    Au niveau cellulaire, les calories sont transformées en <strong>ATP</strong> (Adénosine Triphosphate) via les mitochondries. 
+                    C'est ce qu'on appelle la respiration cellulaire. Chaque nutriment suit un chemin métabolique différent pour alimenter tes muscles et tes organes.
+                </p>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        
     </section>
 
 
