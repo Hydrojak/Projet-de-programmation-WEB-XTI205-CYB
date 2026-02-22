@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    container_name: nutrithub_web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - nutrithub_data:/var/www/html/data
+    restart: unless-stopped
+
+volumes:
+  nutrithub_data:
